@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C05DD0812D2F21A40056DE21 /* libwebp in Frameworks */ = {isa = PBXBuildFile; productRef = C05DD0802D2F21A40056DE21 /* libwebp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C05DD0582D2F1CA20056DE21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		C05DD0612D2F1CA20056DE21 /* PNGtoWebPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PNGtoWebPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C05DD0782D2F1F060056DE21 /* Exceptions for "PNGtoWebP" folder in "PNGtoWebP" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C05DD0432D2F1C9F0056DE21 /* PNGtoWebP */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C05DD0462D2F1C9F0056DE21 /* PNGtoWebP */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C05DD0782D2F1F060056DE21 /* Exceptions for "PNGtoWebP" folder in "PNGtoWebP" target */,
+			);
 			path = PNGtoWebP;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05DD0812D2F21A40056DE21 /* libwebp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = PNGtoWebP;
 			packageProductDependencies = (
+				C05DD0802D2F21A40056DE21 /* libwebp */,
 			);
 			productName = PNGtoWebP;
 			productReference = C05DD0442D2F1C9F0056DE21 /* PNGtoWebP.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = C05DD03B2D2F1C9F0056DE21;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C05DD0792D2F20720056DE21 /* XCRemoteSwiftPackageReference "libwebp-Xcode" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C05DD0452D2F1C9F0056DE21 /* Products */;
 			projectDirPath = "";
@@ -393,12 +415,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PNGtoWebP/PNGtoWebP.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PNGtoWebP/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RU43L6VY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PNGtoWebP/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "This app requires access to convert your selected images";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,12 +445,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PNGtoWebP/PNGtoWebP.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PNGtoWebP/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RU43L6VY5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PNGtoWebP/Info.plist;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "This app requires access to convert your selected images";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +573,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C05DD0792D2F20720056DE21 /* XCRemoteSwiftPackageReference "libwebp-Xcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/libwebp-Xcode";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C05DD0802D2F21A40056DE21 /* libwebp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C05DD0792D2F20720056DE21 /* XCRemoteSwiftPackageReference "libwebp-Xcode" */;
+			productName = libwebp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C05DD03C2D2F1C9F0056DE21 /* Project object */;
 }
